@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/herbsjs/herbs2repl/compare/v1.0.0...v1.0.1) (2022-04-16)
+
+
+### Bug Fixes
+
+* **deps:** bump inquirer from 8.2.0 to 8.2.2 ([cf3be3e](https://github.com/herbsjs/herbs2repl/commit/cf3be3ed1242bf46fe09da6c987cbe849fe17403))
+
 # 1.0.0 (2021-06-23)
 
 
