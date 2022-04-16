@@ -1,3 +1,12 @@
+## [1.0.2](https://github.com/herbsjs/herbs2repl/compare/v1.0.1...v1.0.2) (2022-04-16)
+
+
+### Bug Fixes
+
+* **deps:** bump chalk from 5.0.0 to 5.0.1 ([b2f7d1d](https://github.com/herbsjs/herbs2repl/commit/b2f7d1dd3dde00d769bbc31f3182ee95a3e61a2c))
+* **deps:** bump node-fetch from 2.6.6 to 2.6.7 ([6217f47](https://github.com/herbsjs/herbs2repl/commit/6217f471bce6348f00bbfac5f1300e1d0e5cf8c4))
+* **deps:** bump semver-regex from 3.1.2 to 3.1.3 ([0b83282](https://github.com/herbsjs/herbs2repl/commit/0b83282073dd37edb04a03a40e6887c2202dbace))
+
 ## [1.0.1](https://github.com/herbsjs/herbs2repl/compare/v1.0.0...v1.0.1) (2022-04-16)
 
 
