@@ -5,7 +5,7 @@
   "main": "./src/repl.js",
   "dependencies": {
     "chalk": "^5.0.1",
-    "gradient-string": "^2.0.0",
+    "gradient-string": "^2.0.1",
     "inquirer": "^8.2.2"
   },
   "devDependencies": {
