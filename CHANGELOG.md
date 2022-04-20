@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/herbsjs/herbs2repl/compare/v1.0.2...v1.0.3) (2022-04-20)
+
+
+### Bug Fixes
+
+* **deps:** bump gradient-string from 2.0.0 to 2.0.1 ([0f78c27](https://github.com/herbsjs/herbs2repl/commit/0f78c278979d5d89c22f93bbdc21c7b4124cc3ae))
+
 ## [1.0.2](https://github.com/herbsjs/herbs2repl/compare/v1.0.1...v1.0.2) (2022-04-16)
 
 
