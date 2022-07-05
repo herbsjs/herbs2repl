@@ -1,13 +1,8 @@
 /* eslint-disable no-console */
 
 const inquirer = require('inquirer')
+const chalk = require('chalk')
 const gradient = require('gradient-string')
-let chalk
-
-async function chalkModule() {
-    return import('chalk').then(module=>module.default)
-}
-
 
 async function list(usecases, groupBy) {
 
@@ -108,7 +103,6 @@ async function execute(usecase, user) {
 }
 
 async function repl(usecases, user, { groupBy }) {
-    chalk = await chalkModule()
     let coolGradient = gradient('gold', 'white')
     console.log(chalk.bold(coolGradient('\nHerbs 🌿 - Interative REPL')))
     console.log(chalk.dim('press ^C to exit\n'))
