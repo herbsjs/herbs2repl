@@ -104,7 +104,7 @@ async function execute(usecase, user) {
 
 async function repl(usecases, user, { groupBy }) {
     let coolGradient = gradient('gold', 'white')
-    console.log(chalk.bold(coolGradient('\nHerbs - Interative REPL')))
+    console.log(chalk.bold(coolGradient('\nHerbs 🌿 - Interative REPL')))
     console.log(chalk.dim('press ^C to exit\n'))
 
     while (true) {
