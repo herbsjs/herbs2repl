@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/herbsjs/herbs2repl/compare/v1.0.3...v1.0.4) (2022-07-05)
+
+
+### Bug Fixes
+
+* **support esm:** importing ESM Chalk package to CJS project ([50a51bb](https://github.com/herbsjs/herbs2repl/commit/50a51bb7f86f0f8710c3e0f3a96f896e5f76480f))
+
 ## [1.0.3](https://github.com/herbsjs/herbs2repl/compare/v1.0.2...v1.0.3) (2022-04-20)
 
 

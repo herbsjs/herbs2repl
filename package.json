@@ -1,6 +1,6 @@
 {
   "name": "@herbsjs/herbs2repl",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "./src/repl.js",
   "dependencies": {
