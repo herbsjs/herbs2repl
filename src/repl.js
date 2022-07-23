@@ -91,7 +91,7 @@ async function execute(usecase, user) {
     console.log(chalk`\n{whiteBright.bold Params:}`)
     console.log(chalk.blue(JSON.stringify(answers, null, ' ')))
 
-    const hasAccess = usecase.authorize(user)
+    const hasAccess = await usecase.authorize(user)
     if (!hasAccess) return console.log(chalk`\n{redBright.bold Access denied}`)
 
     const result = await usecase.run(answers)
