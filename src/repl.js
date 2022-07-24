@@ -8,7 +8,7 @@ async function list(usecases, groupBy) {
 
     let ucs = usecases.map((uc) => {
         return {
-            name: uc.tags[groupBy] + ' - ' + uc.usecase.description,
+            name: uc.tags[groupBy] + ' - ' + uc.usecase().description,
             value: uc.usecase
         }
     })
@@ -58,7 +58,8 @@ function printDoc(uc) {
             }
     }
 
-    const doc = uc.doc()
+    const usecase = uc()
+    const doc = usecase.doc()
     const style = chalk.blue.underline
     console.log(`\n${style(doc.description)} use case will execute the following steps:`)
     for (const step of doc.steps) { printStep(step) }
@@ -68,7 +69,8 @@ async function execute(usecase, user) {
 
     console.log(`\nInform the parameters for the use case execution`)
 
-    const params = usecase.requestSchema
+    const uc = usecase()
+    const params = uc.requestSchema
 
     const questions = []
     for (const param of Object.entries(params)) {
@@ -91,10 +93,10 @@ async function execute(usecase, user) {
     console.log(chalk`\n{whiteBright.bold Params:}`)
     console.log(chalk.blue(JSON.stringify(answers, null, ' ')))
 
-    const hasAccess = usecase.authorize(user)
+    const hasAccess = await uc.authorize(user)
     if (!hasAccess) return console.log(chalk`\n{redBright.bold Access denied}`)
 
-    const result = await usecase.run(answers)
+    const result = await uc.run(answers)
     console.log(chalk`\n{whiteBright.bold Result:}`)
 
     let style = result.isOk ? chalk.green : chalk.red
