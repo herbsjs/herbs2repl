@@ -1,3 +1,11 @@
+## [1.0.5](https://github.com/herbsjs/herbs2repl/compare/v1.0.4...v1.0.5) (2022-07-24)
+
+
+### Bug Fixes
+
+* **authorize:** waiting for return of authorization from useCase before executing it ([5de82a7](https://github.com/herbsjs/herbs2repl/commit/5de82a7d449e390141a174c883cfab161b9e3526))
+* **usecase:** instantiating a new object before executing the use case ([701ded2](https://github.com/herbsjs/herbs2repl/commit/701ded2d6e5cf3207ab9ac41448af5db02f8efeb))
+
 ## [1.0.4](https://github.com/herbsjs/herbs2repl/compare/v1.0.3...v1.0.4) (2022-07-05)
 
 
